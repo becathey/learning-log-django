@@ -30,9 +30,9 @@ def new_topic(request):
         if form.is_valid():
             form.save()
             return redirect('learning_logs:topics')
-        # Display blank or invalid form
-        context = {'form': form}
-        return render(request, 'learning_logs/new_topic.html', context)
+    # Display blank or invalid form
+    context = {'form': form}
+    return render(request, 'learning_logs/new_topic.html', context)
 
 def new_entry(request, topic_id):
     """ Add a new entry for a particular topic. """
@@ -48,9 +48,9 @@ def new_entry(request, topic_id):
             new_entry.topic = topic
             new_entry.save()
             return redirect('learning_logs:topic', topic_id=topic_id)
-        # Display blank or invalid form
-        context = {'topic': topic, 'form': form}
-        return render(request, 'learning_logs/new_entry.html', context)
+    # Display blank or invalid form
+    context = {'topic': topic, 'form': form}
+    return render(request, 'learning_logs/new_entry.html', context)
 
 def edit_entry(request, entry_id):
     """ Edit existing entry. """
@@ -65,5 +65,5 @@ def edit_entry(request, entry_id):
         if form.is_valid():
             form.save()
             return redirect('learning_logs:topic', topic_id=topic.id)
-        context = {'entry': entry, 'topic': topic, 'form': form}
-        return render(request, 'learning_logs/edit_entry.html', context)
+    context = {'entry': entry, 'topic': topic, 'form': form}
+    return render(request, 'learning_logs/edit_entry.html', context)
