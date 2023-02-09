@@ -11,7 +11,7 @@
         {{topic}}</a>
     </p>
    
-    <form action="{% url 'learning_logs:new_entry' topic.id %}" method="post">
+    <form action="{% url 'learning_logs:new_entry' topic.id %}" method="post" class="form">
         {% csrf_token %}
         {% bootstrap_form form %}
         {% buttons %}
