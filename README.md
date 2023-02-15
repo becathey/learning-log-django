@@ -49,4 +49,4 @@ Open [http://localhost:8000](http://localhost:8000) in the browser to view the a
 
 To learn how to make the application production-ready and to deploy it, see the Django documentation:
 
-[https://docs.djangoproject.com/en/4.1/howto/deployment/](How to Deploy Django)
+[How to Deploy Django](https://docs.djangoproject.com/en/4.1/howto/deployment/)
