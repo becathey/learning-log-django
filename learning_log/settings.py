@@ -28,8 +28,12 @@ ALLOWED_HOSTS = [
 ]
 
 # Use base URL during development
-
 # ALLOWED_HOSTS = ['.railway.com', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://learning-log-django.up.railway.app']
+
+# Use base URL during development
+# CSRF_TRUSTED_ORIGINS = ['https://#.railway.app']
 
 # Application definition
 
