@@ -22,8 +22,14 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-g(f^#1^l1f&s33
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'learning-log-django.up.railway.app',
+    '127.0.0.1'
+]
 
+# Use base URL during development
+
+# ALLOWED_HOSTS = ['.railway.com', '127.0.0.1']
 
 # Application definition
 
